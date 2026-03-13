@@ -8,7 +8,6 @@ import time
 def test_login():
     options = Options()
     options.binary_location = "C:\\Program Files\\Google\Chrome\\Application\\chrome.exe"
-    jm sj
     service = Service("C:\\tools\\chromedriver\\chromedriver.exe")
     driver = webdriver.Chrome(service=service, options=options)
 
