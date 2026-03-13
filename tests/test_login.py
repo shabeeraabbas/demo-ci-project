@@ -2,14 +2,12 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
 import time
 
 def test_login():
-    options = Options()
-    options.binary_location = "C:\\Program Files\\Google\Chrome\\Application\\chrome.exe"
+
     service = Service("C:\\tools\\chromedriver\\chromedriver.exe")
-    driver = webdriver.Chrome(service=service, options=options)
+    driver = webdriver.Chrome(service=service)
 
     driver.get("file:///C:/Users/user/Desktop/demo-ci-project/index.html")
 
